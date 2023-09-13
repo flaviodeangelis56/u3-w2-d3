@@ -1,8 +1,11 @@
+import { Form } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useParams } from "react-router-dom";
 
-function MyNavbar() {
+function MyNavbar(props) {
+  const location = useLocation();
+  console.log("loc " + location.pathname);
   return (
     <Navbar expand="lg" className="bg-body-black bg-black text-secondary selectedString">
       <img
@@ -41,6 +44,7 @@ function MyNavbar() {
         </Nav>
       </Navbar.Collapse>
       <form className="d-flex align-items-center" role="search">
+        <Form.Control type="text" placeholder={location.pathname === "/tv-shows" ? "Cerca una serie TV" : "Cerca"} />
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
