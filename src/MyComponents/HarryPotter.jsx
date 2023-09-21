@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { Alert, Spinner } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 class HarryPotter extends Component {
   state = {

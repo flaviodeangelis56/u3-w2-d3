@@ -49,7 +49,7 @@ const MovieDetails = () => {
   }, [comments]);
 
   return (
-    <div className="bgMain text-white vh-100">
+    <div className="bgMain text-white ">
       <Container className="pt-5">
         <Row className="mb-5">
           <Col xs={4}> {film && <img src={film.Poster} alt="movie poster" />}</Col>

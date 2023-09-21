@@ -1,5 +1,5 @@
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import Profile from "./MyComponents/Profile";
 import Settings from "./MyComponents/Settings";
 import HomePage from "./MyComponents/HomePage";
